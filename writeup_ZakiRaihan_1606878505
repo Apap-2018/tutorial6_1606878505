@@ -1,0 +1,14 @@
+Pertanyaan Membuat testing untuk JPA
+	1. Mengapa perlu menginisiasi object DealerModel, sedangkan yang di test 
+	hanya CarModel?
+	Jawab: 	karena pada aplikasi web nantinya kita hanya dapat melihat objek mobil dari
+			suatu objek DealerModel, sehingga nantinya kita harus memeriksa juga apakah
+			mobil sudah menjadi bagian dari suatu dealer atau belum
+	
+	2. Jelaskan apa yang akan terjadi jika object DealerModel dihapus dan tidak dilakukan 
+	setDealer pada CarModel?
+	Jawab:	Maka pada entity CarModel di dalam database tidak akan memiliki dealer tempat
+			dia berada sehingga kita tidak bisa melihat apakah mobil yang dibuat
+			benar sudah tersimpan atau belum
+			
+ Pertanyaan Membuat testing untuk Service
